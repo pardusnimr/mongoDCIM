@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CloudSQL Tutorial</title>
+</head>
+<body>
+
+{% for row in rows %}
+  <p>{{ row['Label'] }} watts = {{ row['NominalWatts'] }}
+  </p>
+  <hr>
+{% endfor %}
