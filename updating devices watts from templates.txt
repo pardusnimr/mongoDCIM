@@ -1,0 +1,4 @@
+ for col in cols:
+     watts = col['Wattage']
+     temp = col['TemplateID']
+     dbh.devices.update({'TemplateID' : temp}, { "$set" : {'NominalWatts' : watts}}, multi=True)
